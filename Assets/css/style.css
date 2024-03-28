@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1180px;
+}
+
+header {
+    background: rgba(0, 102, 255, 0.126);
+    padding: 20px 0;
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+}
+
+header .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30%;
+}
+
+header .left-nav {
+    display: flex;
+    align-items: center;
+}
+
+header .left-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+
+header .left-nav ul li a {
+    margin-left: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+header .right-nav {
+    display: flex;
+    align-items: center;
+}
+
+header .right-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header .right-nav ul li a {
+    margin-left: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+section.home {
+    background-image: url(../img/home-new-bg-free-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.429);
+    background-blend-mode: overlay;
+}
+
+section.home .home-content {
+    padding-top: 18%;
+    max-width: 600px;
+}
+
+section.home .home-content h1 {
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+
+
+section.home .home-content h3 {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+section.home .home-content .btn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 130px;
+}
+
+section.home .home-content .btn :nth-child(1) {
+    color: black;
+    background: #fff;
+    padding: 15px 25px;
+    font-weight: 600;
+}
+
+
+section.home .home-content .btn :nth-child(2) {
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    padding: 15px 25px;
+    font-weight: 600;
+}
+
+section.logos {
+    padding: 100px 0;
+}
+
+section.logos img {
+    align-items: center;
+    padding-left: 90px;
+}
+
+section.shop .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: black;
+    grid-gap: 20px;
+}
+
+section.shop .shop-left {
+    background-image: url(../img/footwear-free-img.jpg);
+    background-size: cover;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.429);
+    background-blend-mode: overlay;
+    background-position: 100%;
+}
+
+section.shop .shop-middle {
+    background-image: url(../img/men-fashion-free-img.jpg);
+    background-size: cover;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.429);
+    background-blend-mode: overlay;
+}
+
+section.shop .shop-right {
+    background-image: url(../img/women-fashion-free-img.jpg);
+    background-size: cover;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.429);
+    background-blend-mode: overlay;
+    background-position: 70%;
+}
+
+section.shop .shop-content {
+    padding-top: 60%;
+    padding-left: 30px;
+}
+
+section.shop .shop-content h1 {
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+section.shop .shop-content p {
+    padding-bottom: 40px;
+    line-height: 1.8;
+}
+
+section.shop .shop-content .btn {
+    padding-bottom: 50px;
+}
+
+section.shop .shop-content .btn a {
+    color: black;
+    background: #fff;
+    padding: 15px 25px;
+    font-weight: 600;
+}
+
+
+section.featured-products {
+    padding: 100px 0;
+    background: #f6f4f4;
+    margin-top: 150px;
+}
+
+section.featured-products .heading-title {
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+section.featured-products .heading-title h1::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 10%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 102, 255, 0.92);
+}
+
+section.featured-products .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+section.featured-products .featured-content h3 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 17px;
+}
+
+section.featured-products .featured-content h4 {
+    color: gray;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+
+section.featured-products .featured-content .price {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+section.featured-products .featured-content .price :nth-child(1) {
+    text-decoration: line-through;
+    color: gray;
+}
+
+section.featured-products .featured-content .ratings {
+    margin-bottom: 30px;
+    font-size: 24px;
+    letter-spacing: -5px;
+    cursor: pointer;
+}
+
+
+section.edition {
+    margin-top: 150px;
+    background-image: url(../img/banner-03.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.39);
+    background-blend-mode: overlay;
+}
+
+section.edition .edition-content {
+    padding-top: 150px;
+    max-width: 400px;
+    padding-bottom: 150px;
+
+}
+
+section.edition .edition-content h3 {
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+section.edition .edition-content h1 {
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+section.edition .edition-content p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+section.edition .edition-content h5 {
+    text-wrap: nowrap;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+section.edition .edition-content a.btn {
+    color: black;
+    background: #fff;
+    padding: 15px 25px;
+    font-weight: 600;
+}
+
+
+section.services {
+    background: #ededed;
+}
+
+section.services .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    grid-gap: 50px;
+    padding: 100px 0;
+}
+
+
+section.services .service-wrap img {
+    height: 80px;
+    padding-bottom: 20px;
+}
+
+
+section.services .service-wrap h3 {
+    padding-bottom: 20px;
+}
+
+section.services .service-wrap p {
+    line-height: 1.7;
+}
+
+section.tagline {
+    padding: 50px 0;
+    border-top: 1px solid #0000006f;
+    border-bottom: 1px solid #0000006f;
+}
+
+
+footer {
+    padding: 100px 0 0 0;
+    background: #ffffffb7;
+}
+
+footer .footer-top {
+    padding-bottom: 100px;
+}
+
+footer .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+
+footer .footer-wrap img {
+    height: 40px;
+}
+
+footer .footer-wrap .footer-main-heading {
+    font-size: 25px;
+    text-wrap: nowrap;
+    padding-top: 50px;
+}
+
+
+footer .footer-wrap h2 {
+    font-size: 25px;
+}
+
+
+footer .footer-wrap ul {
+    padding-top: 20px;
+}
+
+
+footer .footer-wrap ul li {
+    padding-top: 10px;
+}
+
+
+footer .footer-wrap ul li a {
+    color: gray;
+    text-align: left;
+}
+
+
+footer .footer-wrap .subscribe-heading {
+    padding-bottom: 30px;
+}
+
+footer .footer-wrap input {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+
+footer .footer-wrap .footer-btn {
+    padding-top: 40px;
+}
+
+footer .footer-wrap a.btn {
+    color: white;
+    background: rgba(0, 102, 255, 0.92);
+    padding: 12px 25px;
+    font-weight: 600;
+}
+
+footer .footer-bottom {
+    padding: 30px 0;
+    border-top: 1px solid #0000006f;
+    border-bottom: 1px solid #0000006f;
+}
+
+footer .footer-bottom .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+footer .footer-bottom .footer-bottom-right {
+    padding-left: 20%;
+}
+
+footer .footer-bottom .footer-bottom-right i {
+    margin-left: 20px;
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    transition: .3s ease all;
+}
+
+footer .footer-bottom .footer-bottom-right i:hover {
+    color: rgba(0, 102, 255, 0.92);
+}
